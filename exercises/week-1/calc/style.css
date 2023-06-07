@@ -1,0 +1,20 @@
+#container {
+  display: flex;
+  height: 20px;
+}
+
+
+#hotpink {
+  flex-grow: 1;
+  background-color: hotpink;
+  width: calc(100% - 20px);
+  height: 100%;
+}
+
+#red {
+  background-color: red;
+  width: 20px;
+  height: 100%;
+}
+
+

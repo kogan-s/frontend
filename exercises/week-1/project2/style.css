@@ -1,0 +1,102 @@
+/div {
+/    width: 50px;
+ /   height: 50px;
+/    background-color: #e74c3c;
+/  }
+/  div {
+ /   width: 50%;
+/  }
+/  h1 {
+ /   font-family: "Helvetica";
+/  }
+/  ul {
+ /   color: blue;
+/  }
+
+
+ / <div class="nav-bar"></div>
+
+ / .nav-bar {
+ /   position: fixed;
+ /}
+
+
+ /<h1 class="heading tomato">Caution!</h1>
+ /<h3 class="tomato">Never eat these things!</h3>
+
+ /<ul class="gross-color">
+ /  ﻿<li>pickled pigs feet</li>
+ /  ﻿<li>rotten cheese</li>
+ /  ﻿<li>fried field mouse</li>
+ /</ul>
+ /      
+ /<hr/>
+ /      
+ /<h1 class="heading tomato">Notice!</h1>
+ /      
+ /<h3 class="tomato">Always eat these things!</h3>
+       
+ /<ul class="nice-color">
+ /  ﻿<li>pickled pigs feet</li>
+ /  ﻿<li>rotten cheese</li>
+ /  ﻿<li>fried field mouse</li>
+ /</ul>
+
+
+/ vertical-align: middle;
+/}
+
+/.tomato {
+/  color: tomato;
+/}
+/
+/.gross-color {
+/  color: #a3c010;
+/}
+/
+/.nice-color {
+/  color: #03bbbb;
+/}
+/
+/div {
+/    width: 200px;
+/    height: 200px;
+/    background-color: red;
+/    border: 5px solid magenta;
+/  }
+/
+  .songs-container {
+    background-color: green;
+    border: 25px solid red;
+  }
+
+
+  #rock-songs {
+    background-color: orange;
+    border: 10px solid blue;
+  }
+
+  .panel #rock-songs {
+    background-color: gray;
+  }
+  
+  #rock-songs {
+    background-color: orange;
+    border: 10px solid blue;
+ }
+
+
+ .square {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border: 1px;
+}
+
+
+
+ <div style="background-color: pink;" id="rock-songs" class="songs-container">
+      
+    </div>
+
+    

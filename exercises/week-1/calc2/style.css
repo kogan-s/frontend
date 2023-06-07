@@ -1,0 +1,41 @@
+#body {
+  border: 20px;
+  border-color: black;
+}
+
+#container {
+  display: flex;
+  
+  
+  height: 40px;
+}
+
+
+.one {
+  
+  width: calc(13.3333%);
+  background-color: hotpink;
+  height: 100%;
+  border: 2px;
+  border-color: black;
+}
+
+.two {
+  width: calc(13.3333%);
+  background-color:pink;
+  height: 100%;
+  border: 2px;
+  border-color: black;
+}
+
+.three {
+  width: calc(13.3333%);
+  background-color:red;
+  height: 100%;
+  border: 2px;
+  border-color: black;
+}
+
+
+
+}
