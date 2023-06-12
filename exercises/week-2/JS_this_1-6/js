@@ -1,0 +1,24 @@
+1) 
+const introduceYourSelf = function () {
+	alert("Hi, I'm " + this.username);
+}
+
+
+const person = {
+  username: "Felicia",
+  introduce: introduceYourSelf()
+  }
+
+
+person.introduce()
+
+2)
+
+const person = {
+  username: "Felicia",
+  introduce: function(){
+    console.log("Hi, I'm " + this.username) //this!
+  }
+}
+
+person.introduce() //prints "Hi, I'm Felicia"

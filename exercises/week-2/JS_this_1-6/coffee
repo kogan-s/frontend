@@ -1,0 +1,30 @@
+makeDrink: function(drinkType) {
+    if (drinkType in this.drinkRequirements) {
+      const requiredBeans = this.drinkRequirements[drinkType];
+      if (requiredBeans <= this.beans) {
+        this.beans -= requiredBeans;
+        console.log(`Enjoy your ${drinkType}!`);
+      } else {
+        console.log("Sorry, we're all out of beans!");
+      }
+    } else {
+      console.log(`Sorry, we don't make ${drinkType}.`);
+    }
+  }
+};
+
+
+ if (this.drinkRequirements[drinkType] != undefined) {
+ console.log(drinkType + " needs " + this.drinkRequirements[drinkType] + " beans. Now we have " + this.beans + " beans.");
+ console.log();
+
+        if (this.beans >= this.drinkRequirements[drinkType]) {
+            this.beans -= this.drinkRequirements[drinkType];
+
+        } else {
+         console.log("Sorry, we're all out of beans");
+                }
+
+} else {
+    console.log("Sorry, we don't make " + drinkType); 
+}
