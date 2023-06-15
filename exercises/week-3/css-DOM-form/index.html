@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
+<body>
+    
+    <form id="signupForm">
+        <div>
+          <label for="name">Name:</label>
+        </div>
+        <div>
+          <input type="text" id="name" required>
+        </div>
+        
+        <div>
+          <label for="salary">Desired Salary:</label> <label for="birthday">Birthday:</label>
+          
+        </div>
+    <div>  
+          <input type="number" id="salary" required> <input type="date" id="birthday" required>
+          
+          
+        </div>
+        
+        <div>
+          <label for="phone">Phone:</label>
+        </div>
+    <div>
+          <input type="tel" id="phone" required>
+        </div>
+        
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+      
+      <div id="errorMessages"></div>
+
+      
+      
+      <script src="main.js"></script>
+
+    
+</body>
+
+</html>

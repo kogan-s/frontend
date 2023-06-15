@@ -1,0 +1,45 @@
+#container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 3fr 1fr;
+ grid-template-areas: 
+  /*"h h h h h h""s s m m m m""s s m m m m""s s m m m m""s s f f f f";*/
+  /*"h h h h h h""s m m m m m""s m m m m m""s m m m m m""s f f f f f";*/
+  /*"h h h h h h""f f m s s s""f f m s s s""f f m s s s""f f m s s s";*/
+  /*"s s s s s s""f f f m m h""f f f m m h""f f f m m h""f f f m m h";*/
+  /*"h h f f s s""h h f f s s""h h f f s s""h h m m s s""h h m m s s";*/
+  "s m ""f f";
+  /*"h h f f s s""h h f f s s""h h f f s s""h h m m s s""h h m m s s"; */
+  grid-gap: 10px;
+
+/*grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-template-areas: 
+"s m m m"
+"s m m m"
+"s m m m"
+"f f f f"; */
+
+}
+
+.head{
+  grid-area: h;
+  background-color: orange;
+}
+
+.side-nav{
+  grid-area: s;
+  background-color: red;
+}
+
+.main{
+  grid-area: m;
+  background-color: lightgreen;
+}
+
+.foot{
+  grid-area: f;
+  background-color: lightgray;
+}
+

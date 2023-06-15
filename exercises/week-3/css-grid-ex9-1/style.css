@@ -1,0 +1,34 @@
+#chat{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 15fr 1fr;
+  grid-template-areas: 
+  "f c"
+  "f i";
+}
+
+#friends{
+  grid-area: f;
+  display: grid;
+  background-color: darkviolet;
+
+
+}
+
+#chatbox{
+  grid-area: c;
+  display: grid;
+  background-color: lightgray;
+}
+
+#input{
+  grid-area: i;
+  display: grid;
+  background-color: darkviolet;
+}
+
+#text-container left
+{ display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);}

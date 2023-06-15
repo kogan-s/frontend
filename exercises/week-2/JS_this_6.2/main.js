@@ -35,7 +35,7 @@
       const hasDrink = drinkType in this.drinkRequirements; //!!!!
       if (hasDrink) {
         const price = this.drinkRequirements[drinkType].price;
-        this.money += price;
+        this.money += price;     //error. we shouldn't get money before we make drink. in case out of beans will rise error!
         this.makeDrink(drinkType);
       } else {
         console.log(`Sorry, we don't make ${drinkType}.`);
