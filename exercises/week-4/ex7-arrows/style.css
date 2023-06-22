@@ -1,0 +1,19 @@
+/* Add your desired styling here */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+button {
+  margin: 5px;
+}
+
+#cartCounter {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-weight: bold;
+}
