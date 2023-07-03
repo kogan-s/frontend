@@ -1,0 +1,70 @@
+.flexbox-container {
+    display: flex;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    
+}
+
+.flexbox-item {
+    width: 100px; 
+    margin: 0px;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.header {
+
+width: 500px;
+background-color: lightblue;
+text-align: center;
+height: 100px;
+line-height: 100px;
+border: 3px solid black;
+box-sizing: border-box;
+}
+
+h1{
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu {
+min-height: 100px;
+width: 100px;
+background-color: lightpink;
+box-sizing: border-box;
+
+display: flex;
+justify-content: flex-start;
+
+}
+
+.content {
+min-height: 100px;
+width: 300px;
+background-color: burlywood;
+box-sizing: border-box;
+/*line-height: 10%;*/
+}
+
+.ad {
+min-height: 100px;
+width: 100px;
+background-color: lightpink;
+box-sizing: border-box;
+}
+
+.footer {
+    min-height: 100px;
+width: 500px;
+background-color: lightblue;
+border: 3px solid black;
+box-sizing: border-box;
+
+
+text-align: center;
+height: 100px;
+line-height: 100px;
+
+
+    }
