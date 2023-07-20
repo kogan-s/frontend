@@ -37,10 +37,9 @@ class Renderer {
   const template = Handlebars.compile(source);
   const html = template(pokemon);
 
-    // Insert the rendered HTML into the friends-container div
+    // Insert the rendered HTML into the pokemon-container div
     document.querySelector('.pokemon-container').innerHTML = html;
   }
-
 
   renderAboutMe(text) {
     // Use Handlebars template to render About Me section
@@ -51,6 +50,8 @@ class Renderer {
     // Insert the rendered HTML into the meat-container div
     document.querySelector('.meat-container').innerHTML = html;
   }
+
+
 }
 
 

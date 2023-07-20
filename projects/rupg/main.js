@@ -41,7 +41,7 @@ function loadUserPage() {
     renderer.renderMainUser(userData.mainUser);
     renderer.renderFriends(userData.friends);
     renderer.renderQuote(userData.quote);
-    renderer.renderPokemon(userData.pokemon);  
+    renderer.renderPokemon(userData.pokemon); 
     renderer.renderAboutMe(userData.aboutMe);
     alert('User page loaded!');
   } else {
