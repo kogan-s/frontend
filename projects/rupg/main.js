@@ -51,10 +51,6 @@ function loadUserPage() {
 
 
 
-// Attach click event listeners to the buttons
-//document.querySelector('.buttons button:nth-child(1)').addEventListener('click', loadData);
-//document.querySelector('.buttons button:nth-child(2)').addEventListener('click', renderData);
-
 // Attach click event listener to the "Generate" button
 document.querySelector('.generate-button').addEventListener('click', loadDataAndRender);
 // Attach click event listener to the "Save User Page" button
