@@ -1,0 +1,4 @@
+Using the following random word API https://random-word-api.herokuapp.com/word, make a request to the API and get a random word.
+Then use that word to make a request to the Google Books API https://www.googleapis.com/books/v1/volumes?q=intitle:WORD_HERE/
+You should request a book whose title has that random word.
+Use promises.

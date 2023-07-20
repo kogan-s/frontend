@@ -1,0 +1,11 @@
+/* Add CSS to style the layout */
+.pokemon-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between the picture and info */
+}
+
+.pokemon-picture img {
+    max-width: 150px; /* Adjust the picture size as needed */
+    border-radius: 50%; /* Make the picture circular */
+}

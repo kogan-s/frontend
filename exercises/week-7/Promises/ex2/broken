@@ -1,0 +1,12 @@
+Using the following random word API https://random-word-api.herokuapp.com/word, make a request to the API and get a random word.
+Then use that word to make a request to the Google Books API https://www.googleapis.com/books/v1/volumes?q=intitle:WORD_HERE/
+You should request a book whose title has that random word.
+
+Get a random book and a random GIF based off the word that came back from /randomWords.
+Use GIPHY API like this (book title instead of ryan gosling):
+var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5");
+xhr.done(function(data) { console.log("success got data", data); });
+
+When all of the data you want comes back, display it on the page. It doesn’t have to be anything fancy, you can just add the book title and the GIF directly to the body.
+
+Use promises.

@@ -1,0 +1,13 @@
+const renderApts = function (apartments) {
+  $("#results").empty();
+  $("#no-results").empty();
+
+  if (apartments.length === 0) {
+    $("#no-results").text("No matching results found.");
+  } else {
+    const source = $("#apt-template").html();
+    const template = Handlebars.compile(source);
+    const html = template({ apartments });
+    $("#results").append(html);
+  }
+};

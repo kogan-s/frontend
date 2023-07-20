@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>API Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+
+
+  <!-- Handlebars templates -->
+  <script id="main-user-template" type="text/x-handlebars-template">
+    <!-- Main User Section -->
+    <div class="user-picture">
+      <img src="{{picture.large}}" alt="{{name.first}} {{name.last}}">
+    </div>
+    <div class="user-info">
+      <h1>{{name.first}} {{name.last}}</h1>
+      <p>{{location.city}}, {{location.state}}</p>
+    </div>
+  </script>
+
+  <script id="friends-template" type="text/x-handlebars-template">
+    <!-- Friends Section -->
+    {{#each friends}}
+    <p>{{name.first}} {{name.last}}</p>
+    {{/each}}
+  </script>
+
+  <script id="about-me-template" type="text/x-handlebars-template">
+    <!-- About Me Section -->
+    <h4>About Me</h4>
+    <p>{{text}}</p>
+  </script>
+
+
+  <script id="quote-template" type="text/x-handlebars-template">
+    <!-- Quote Section -->
+    <h4>Favorite Quote</h4>
+    <p>{{quote}} - Kanye West</p>
+  </script>
+
+
+  <script id="pokemon-template" type="text/x-handlebars-template">
+    <!-- Pokemon Section -->
+    <div class="pokemon-picture">
+      <img src="{{sprites.front_default}}" alt="{{name}}">
+   </div>
+    <div class="pokemon-info">  
+      <p>Favorite Pokemon - {{properCase name}}</p>      <!-- use helper to change case >!--
+    </div>
+  </script>
+
+
+</head>
+
+
+<body>
+    <div class="container">	
+        <div class="user-container"></div>	
+        <div class="quote-container"></div>	
+        <div class="content-container">
+          <div class="pokemon-container"></div>	
+          <div class="meat-container"></div>	 
+       </div> 	
+        <div class="friends">	
+            <h4>Friends</h4>	
+            <div class="friends-container">	
+            </div>	
+        </div>
+	
+        <div class="buttons">	
+            <button>Generate</button>		
+        </div>	
+    </div>
+
+<script src="Renderer.js"></script>
+<script src="APIManager.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
